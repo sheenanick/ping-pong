@@ -28,16 +28,29 @@ function pingPong(array) {
 $(document).ready(function(){
   $("#play-btn").click(function() {
     $("html,body").animate({
-        scrollTop: $("#rules").offset().top},
-        "slow");
+      scrollTop: $("#game").offset().top},"slow");
   });
   $("form").submit(function(event){
     event.preventDefault();
+    $("#output li").remove();
+    $("#input-form").removeClass("has-error");
+    $(".help-block").hide();
     var inputNumber = parseInt($("#input").val());
     var output = pingPong(numberList(inputNumber));
-    $("#output li").remove();
     for (var i=0; i<output.length; i++){
       $("ul").append("<li>" + output[i] + "</li>");
+    }
+    if(inputNumber<1) {
+      $("#input-form").addClass("has-error");
+      $(".help-block").show();
+    } else if(inputNumber<35){
+      $("#player1").show().fadeIn(1000).fadeOut(1000);
+    } else if(inputNumber<70){
+      $("#player2").show().fadeIn(1000).fadeOut(1000);
+    } else if(inputNumber<100){
+      $("#player3").show().fadeIn(1000).fadeOut(1000);
+    } else {
+      $("#player4").show().fadeIn(1000).fadeOut(1000);
     }
   });
   $("#reset").click(function(){

@@ -14,7 +14,7 @@
       <h1>Ping-Pong</h1>
       <button id="play-btn" class="btn btn-success btn-lg" type="button">Play Now</button>
     </div>
-    <div class="container">
+    <div class="container" id="game">
       <div class="section" id="rules">
         <h3>Rules:</h3>
         <p>
@@ -26,10 +26,17 @@
           <li>Numbers divisible by 15 become "ping-pong"</li>
         </ol>
       </div>
+      <img id="player1" src="img/player1.jpg">
+      <img id="player2" src="img/player2.jpg">
+      <img id="player3" src="img/player3.jpg">
+      <img id="player4" src="img/player4.jpg">
       <div class="section">
         <form>
           <h3>Let's Play:</h3>
-          <input id="input" type="number" placeholder="Enter a number" required>
+          <div class="form-group" id="input-form">
+            <input class="form-control" id="input" type="number" placeholder="Enter a number" required>
+            <span class="help-block">Please enter a number greater than 0</span>
+          </div>
           <button class="btn btn-primary" type="submit">Ping-pong!</button>
           <button id="reset" class="btn btn-danger" type="reset" name="button">Reset</button>
         </form>
