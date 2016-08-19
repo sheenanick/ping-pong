@@ -13,9 +13,13 @@ function numberList(number) {
 
 function pingPong(array) {
   for (var i=0; i<array.length; i++)
-    if(array[i] % 3 === 0){
+    if(array[i] % 5 === 0){
+      pingPongArray.push("pong");
+    }
+    else if(array[i] % 3 === 0){
       pingPongArray.push("ping");
-    } else {
+    }
+    else {
       pingPongArray.push(array[i]);
     }
 }
