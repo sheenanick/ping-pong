@@ -26,6 +26,11 @@ function pingPong(array) {
 
 //<!-- Front End -->
 $(document).ready(function(){
+  $("#play-btn").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#rules").offset().top},
+        "slow");
+  });
   $("form").submit(function(event){
     event.preventDefault();
     var inputNumber = parseInt($("#input").val());
@@ -34,5 +39,8 @@ $(document).ready(function(){
     for (var i=0; i<output.length; i++){
       $("ul").append("<li>" + output[i] + "</li>");
     }
+  });
+  $("#reset").click(function(){
+    $("#output li").remove();
   });
 });
