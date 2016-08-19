@@ -6,22 +6,22 @@
 
 ## Description
 
-_This is a website ._
+_This is a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions: numbers divisible by 3 are replaced with "ping", numbers divisible by 5 are replaced with "pong", and numbers divisible by 15 are replaced with "ping-pong"._
 
 ## Specifications
 
 * _It can count up to the provided number_
-#### _Example Input: 2_
-#### _Example Output: [1,2]_
+  * _Example Input: 2_
+  * _Example Output: [1,2]_
 * _It can replace numbers divisible by 3 with "ping"_
-#### _Example Input: 3_
-#### _Example Output: [1,2,ping]_
+  * _Example Input: 3_
+  * _Example Output: [1,2,ping]_
 * _It can also replace numbers divisible by 5 with "pong"_
-#### _Example Input: 5_
-#### _Example Output: [1,2,ping,4,pong]_
+  * _Example Input: 5_
+  * _Example Output: [1,2,ping,4,pong]_
 * _It can also replace numbers divisible by 15 with "ping-pong"_
-#### _Example Input: 15_
-#### _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]_
+  * _Example Input: 15_
+  * _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]_
 
 ## Setup/Installation Requirements
 
