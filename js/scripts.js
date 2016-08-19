@@ -43,14 +43,17 @@ $(document).ready(function(){
     if(inputNumber<1) {
       $("#input-form").addClass("has-error");
       $(".help-block").show();
-    } else if(inputNumber<35){
-      $("#player1").show().fadeIn(1000).fadeOut(1000);
-    } else if(inputNumber<70){
-      $("#player2").show().fadeIn(1000).fadeOut(1000);
-    } else if(inputNumber<100){
-      $("#player3").show().fadeIn(1000).fadeOut(1000);
     } else {
-      $("#player4").show().fadeIn(1000).fadeOut(1000);
+      $("h2").show().fadeIn(1000).fadeOut(1000);
+      if(inputNumber<35){
+      $("#player1").show().fadeIn(1000).fadeOut(1000);
+      } else if(inputNumber<70){
+        $("#player2").show().fadeIn(1000).fadeOut(1000);
+      } else if(inputNumber<100){
+        $("#player3").show().fadeIn(1000).fadeOut(1000);
+      } else {
+        $("#player4").show().fadeIn(1000).fadeOut(1000);
+      }
     }
   });
   $("#reset").click(function(){

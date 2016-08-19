@@ -12,6 +12,13 @@ h1 {
   padding-bottom: 1em;
 }
 
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 1.5em;
+}
+
 h3 {
   padding-bottom: .5em;
 }
@@ -25,6 +32,14 @@ img {
 
 form {
   padding-bottom: 3em;
+}
+
+a {
+  color: #cc6666;
+}
+
+a:hover {
+  color: #bf4040;
 }
 
 .jumbotron {
@@ -55,7 +70,7 @@ form {
   margin-top: 2em;
 }
 
-#player1, #player2, #player3, #player4, .help-block {
+#player1, #player2, #player3, #player4, .help-block, .ping-pong {
   display: none;
   margin: auto;
 }
